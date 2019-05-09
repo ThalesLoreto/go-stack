@@ -1,1 +1,1 @@
-Repositorio para o go stack
+Repository Go-Stack Rocketseat
