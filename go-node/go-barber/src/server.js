@@ -23,6 +23,8 @@ class App {
       autoescape: true
     })
 
+    // dizendo ao express 'servir'(encontrar) os arquivos da pasta public
+    this.express.use(express.static(path.resolve(__dirname, 'public')))
     this.express.set('view engine', 'njk')
   }
 
