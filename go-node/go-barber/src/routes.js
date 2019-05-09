@@ -10,12 +10,20 @@ const guestMiddleware = require('./app/middlewares/guest')
 const UserController = require('./app/controllers/UserController')
 const SessionController = require('./app/controllers/SessionController')
 
+routes.use((req, res, next) => {
+  res.locals.flashSuccess = req.flash('success')
+  res.locals.flashError = req.flash('error')
+
+  return next()
+})
+
 routes.get('/', guestMiddleware, SessionController.create)
 routes.post('/signin', SessionController.store)
 
 routes.get('/signup', guestMiddleware, UserController.create)
 routes.post('/signup', upload.single('avatar'), UserController.store)
 
+// Adicionando Middleware em todos os links que possuam /app
 routes.use('/app', authMiddleware)
 
 routes.get('/logout', SessionController.destroy)
