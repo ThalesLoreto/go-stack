@@ -1,0 +1,1 @@
+Repositorio para o go stack
