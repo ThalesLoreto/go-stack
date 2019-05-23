@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 
 import Button from "./Button";
 
+import "./style.scss";
+
 class App extends Component {
   state = {
     counter: 0
@@ -16,7 +18,7 @@ class App extends Component {
     return (
       <Fragment>
         <h1>Hello World</h1>
-        <h1>{this.state.counter}</h1>
+        <h1 style={{ color: "#f00" }}>{this.state.counter}</h1>
         <Button onClick={this.handleClick}>Somar</Button>
       </Fragment>
     );
