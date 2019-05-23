@@ -1,3 +1,21 @@
-const soma = (a, b) => a + b;
+import React, { Component, Fragment } from "react";
+import ReactDOM from "react-dom";
 
-alert(soma(3, 3));
+class Button extends Component {
+  render() {
+    return <a href="">Salvar</a>;
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
+      <Fragment>
+        <h1>Hello World</h1>
+        <Button />
+      </Fragment>
+    );
+  }
+}
+
+ReactDOM.render(<App />, document.getElementById("app"));
