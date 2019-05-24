@@ -19,3 +19,54 @@ div#app {
     color: #fff;
   }
 }
+
+.post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  width: 700px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 30px;
+
+  .post-header {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+    }
+
+    .container-post {
+      margin-left: 10px;
+
+      display: flex;
+      flex-direction: column;
+
+      strong {
+        font-size: 16px;
+        color: #333333;
+      }
+
+      span {
+        font-size: 14px;
+        color: #999999;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+}
