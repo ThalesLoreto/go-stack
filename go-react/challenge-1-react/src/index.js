@@ -2,8 +2,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Hello from './components/App';
+import App from './components/App';
 
 import './style.scss';
 
-ReactDOM.render(<Hello />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));

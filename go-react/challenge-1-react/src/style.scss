@@ -1,7 +1,21 @@
 body {
   background: gainsboro;
+}
+div#app {
   h1 {
-    color: #f33;
     text-align: center;
+  }
+}
+
+.navbar {
+  background-color: rgb(6, 119, 194);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -8px;
+
+  h2 {
+    color: #fff;
   }
 }
